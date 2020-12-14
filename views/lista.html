@@ -1,0 +1,36 @@
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <table id="example" class="display">
+                <legend><h5>Lista de cidades</h5>
+                </legend>
+                <thead>
+                    <tr>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    {loop="$cidades"}
+                        
+                    <tr>
+                        <td>{$value.nome}</td>
+                        <td>{$value.estadoid}</td>
+                        
+                    </tr>
+                    {/loop}
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
